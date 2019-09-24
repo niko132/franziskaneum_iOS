@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HLE-6v-v4I">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today VPlan Table View Controller-->
+        <scene sceneID="lpG-4W-PbX">
+            <objects>
+                <tableViewController automaticallyAdjustsScrollViewInsets="NO" id="4Ud-dO-7om" userLabel="Today VPlan Table View Controller" customClass="TodayVPlanTableViewController" customModule="FranziskaneumVPlanWidget" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="46" sectionHeaderHeight="28" sectionFooterHeight="28" id="KR9-rO-393">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="mNa-yz-Sar">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPq-e0-kvd">
+                                    <rect key="frame" x="8" y="0.0" width="367" height="44"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="gPq-e0-kvd" firstAttribute="top" secondItem="mNa-yz-Sar" secondAttribute="top" id="8cO-KY-D85"/>
+                                <constraint firstAttribute="bottom" secondItem="gPq-e0-kvd" secondAttribute="bottom" id="K2F-K4-uq8"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gPq-e0-kvd" secondAttribute="trailing" id="R5y-6u-3uO"/>
+                                <constraint firstItem="gPq-e0-kvd" firstAttribute="leading" secondItem="mNa-yz-Sar" secondAttribute="leading" constant="8" id="oQf-Eq-2yf"/>
+                                <constraint firstAttribute="trailing" secondItem="gPq-e0-kvd" secondAttribute="trailing" id="pi7-s2-rwo"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodayVPlanTableViewHeader" rowHeight="30" id="PO4-bt-Gvr" customClass="TodayVPlanHeaderTableViewCell" customModule="FranziskaneumVPlanWidget">
+                                <rect key="frame" x="0.0" y="72" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PO4-bt-Gvr" id="bZS-dx-TUu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Montag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GM-Zl-r2Z">
+                                            <rect key="frame" x="8" y="4" width="60" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <color key="textColor" red="0.63529411759999999" green="0.054901960780000002" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="4GM-Zl-r2Z" secondAttribute="trailing" id="2EN-rY-4dL"/>
+                                        <constraint firstItem="4GM-Zl-r2Z" firstAttribute="top" secondItem="bZS-dx-TUu" secondAttribute="topMargin" id="5kI-b8-UnY"/>
+                                        <constraint firstItem="4GM-Zl-r2Z" firstAttribute="leading" secondItem="bZS-dx-TUu" secondAttribute="leadingMargin" id="SH1-2U-7o9"/>
+                                        <constraint firstItem="4GM-Zl-r2Z" firstAttribute="bottom" secondItem="bZS-dx-TUu" secondAttribute="bottomMargin" id="zFQ-7t-zrL"/>
+                                    </constraints>
+                                    <edgeInsets key="layoutMargins" top="4" left="8" bottom="4" right="8"/>
+                                </tableViewCellContentView>
+                                <edgeInsets key="layoutMargins" top="4" left="8" bottom="4" right="8"/>
+                                <connections>
+                                    <outlet property="title" destination="4GM-Zl-r2Z" id="Vfs-Pk-94T"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodayVPlanTableViewCell" rowHeight="26" id="Lhm-TY-Efq" customClass="TodayVPlanTableViewCell" customModule="FranziskaneumVPlanWidget">
+                                <rect key="frame" x="0.0" y="102" width="375" height="26"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lhm-TY-Efq" id="B3i-UA-aOi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="26"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRo-2Y-QHF">
+                                            <rect key="frame" x="8" y="4" width="35.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="sRo-2Y-QHF" firstAttribute="top" secondItem="B3i-UA-aOi" secondAttribute="topMargin" id="H2c-W8-rHp"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="sRo-2Y-QHF" secondAttribute="trailing" id="K69-f5-JsV"/>
+                                        <constraint firstItem="sRo-2Y-QHF" firstAttribute="leading" secondItem="B3i-UA-aOi" secondAttribute="leadingMargin" id="Yvf-Tu-PAT"/>
+                                        <constraint firstItem="sRo-2Y-QHF" firstAttribute="bottom" secondItem="B3i-UA-aOi" secondAttribute="bottomMargin" id="cj4-Qr-SDc"/>
+                                    </constraints>
+                                    <edgeInsets key="layoutMargins" top="4" left="8" bottom="4" right="8"/>
+                                </tableViewCellContentView>
+                                <edgeInsets key="layoutMargins" top="4" left="8" bottom="4" right="8"/>
+                                <connections>
+                                    <outlet property="label" destination="sRo-2Y-QHF" id="Tpw-a4-U6d"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="4Ud-dO-7om" id="9wj-aI-Lue"/>
+                            <outlet property="delegate" destination="4Ud-dO-7om" id="kxS-nE-62i"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JWf-AM-osq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--TodayV Plan Table View Controller-->
+        <scene sceneID="brh-Q3-SLk">
+            <objects>
+                <viewController id="HLE-6v-v4I" customClass="TodayVPlanTableViewController" customModule="FranziskaneumVPlanWidget" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lli-Up-wxC"/>
+                        <viewControllerLayoutGuide type="bottom" id="03u-2V-irR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Oa-kd-LaA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="21" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rt3-fN-4iF">
+                                <rect key="frame" x="137.5" y="20" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9Gb-GN-LCC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.63529411759999999" green="0.054901960780000002" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="28" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kft-zh-snp">
+                                <rect key="frame" x="0.0" y="41" width="375" height="626"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodayVPlanTableViewHeader" rowHeight="30" id="tlu-Q2-exG" customClass="TodayVPlanHeaderTableViewCell" customModule="FranziskaneumVPlanWidget">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="30"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tlu-Q2-exG" id="TWO-2j-OcS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Montag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkz-YP-SXt">
+                                                    <rect key="frame" x="8" y="4" width="60" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <color key="textColor" red="0.63529411759999999" green="0.054901960780000002" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fkz-YP-SXt" firstAttribute="top" secondItem="TWO-2j-OcS" secondAttribute="topMargin" id="HXh-Wa-iIj"/>
+                                                <constraint firstItem="fkz-YP-SXt" firstAttribute="leading" secondItem="TWO-2j-OcS" secondAttribute="leadingMargin" id="IRo-Wk-Sam"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="fkz-YP-SXt" secondAttribute="trailing" id="Mv5-KJ-g4H"/>
+                                                <constraint firstItem="fkz-YP-SXt" firstAttribute="bottom" secondItem="TWO-2j-OcS" secondAttribute="bottomMargin" id="ptc-2t-S7X"/>
+                                            </constraints>
+                                            <edgeInsets key="layoutMargins" top="4" left="8" bottom="4" right="8"/>
+                                        </tableViewCellContentView>
+                                        <edgeInsets key="layoutMargins" top="4" left="8" bottom="4" right="8"/>
+                                        <connections>
+                                            <outlet property="title" destination="fkz-YP-SXt" id="NEw-0u-ihM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodayVPlanTableViewCell" rowHeight="20" id="ZxL-la-cCQ" customClass="TodayVPlanTableViewCell" customModule="FranziskaneumVPlanWidget">
+                                        <rect key="frame" x="0.0" y="58" width="375" height="20"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZxL-la-cCQ" id="f8Z-G1-wJ8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7O-y8-BEi">
+                                                    <rect key="frame" x="8" y="4" width="359" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="f7O-y8-BEi" firstAttribute="top" secondItem="f8Z-G1-wJ8" secondAttribute="topMargin" id="63z-2D-XhM"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="f7O-y8-BEi" secondAttribute="trailing" id="VIi-jQ-uC3"/>
+                                                <constraint firstItem="f7O-y8-BEi" firstAttribute="leading" secondItem="f8Z-G1-wJ8" secondAttribute="leadingMargin" id="kbA-Vz-Hia"/>
+                                                <constraint firstItem="f7O-y8-BEi" firstAttribute="bottom" secondItem="f8Z-G1-wJ8" secondAttribute="bottomMargin" id="oug-y4-Q99"/>
+                                            </constraints>
+                                            <edgeInsets key="layoutMargins" top="4" left="8" bottom="4" right="8"/>
+                                        </tableViewCellContentView>
+                                        <edgeInsets key="layoutMargins" top="4" left="8" bottom="4" right="8"/>
+                                        <connections>
+                                            <outlet property="label" destination="f7O-y8-BEi" id="HKD-7V-rmO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HLE-6v-v4I" id="9PT-9Q-9uK"/>
+                                    <outlet property="delegate" destination="HLE-6v-v4I" id="SHM-1q-Moj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kft-zh-snp" firstAttribute="leading" secondItem="2Oa-kd-LaA" secondAttribute="leading" id="HQf-0c-DFT"/>
+                            <constraint firstItem="Rt3-fN-4iF" firstAttribute="centerX" secondItem="2Oa-kd-LaA" secondAttribute="centerX" id="HW2-ju-pg9"/>
+                            <constraint firstItem="Kft-zh-snp" firstAttribute="top" secondItem="Rt3-fN-4iF" secondAttribute="bottom" id="a09-9m-ddU"/>
+                            <constraint firstAttribute="trailing" secondItem="Kft-zh-snp" secondAttribute="trailing" id="evT-Vm-bjt"/>
+                            <constraint firstItem="Rt3-fN-4iF" firstAttribute="top" secondItem="lli-Up-wxC" secondAttribute="bottom" id="f5y-Wp-KtA"/>
+                            <constraint firstItem="03u-2V-irR" firstAttribute="top" secondItem="Kft-zh-snp" secondAttribute="bottom" id="iIN-RG-0T7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Rt3-fN-4iF" id="tbi-dt-CZK"/>
+                        <outlet property="labelHeightConstraint" destination="9Gb-GN-LCC" id="hsU-sr-XPS"/>
+                        <outlet property="tableView" destination="Kft-zh-snp" id="OBz-Xd-g1t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ww2-pT-Aqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="107"/>
+        </scene>
+    </scenes>
+</document>

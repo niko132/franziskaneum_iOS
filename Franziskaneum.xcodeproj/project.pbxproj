@@ -1,0 +1,985 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23185BAD1CA8447C00046BD7 /* VPlanDayControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23185BAC1CA8447C00046BD7 /* VPlanDayControlViewController.swift */; };
+		23185BAF1CA8477F00046BD7 /* EmptySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23185BAE1CA8477F00046BD7 /* EmptySegue.swift */; };
+		231C3AFB1C5D76F000012158 /* SchoolClassOrTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231C3AFA1C5D76F000012158 /* SchoolClassOrTeacherViewController.swift */; };
+		231D59831C68DF0700A15FC8 /* VPlanDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D59821C68DF0700A15FC8 /* VPlanDayTableViewCell.swift */; };
+		231D59851C6906EE00A15FC8 /* LicensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D59841C6906EE00A15FC8 /* LicensesViewController.swift */; };
+		231E706F1C55396600D0E269 /* NewsOlderPostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E706E1C55396600D0E269 /* NewsOlderPostsTableViewCell.swift */; };
+		231E70721C55420700D0E269 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E70711C55420700D0E269 /* SettingsTableViewController.swift */; };
+		231E70741C554C0500D0E269 /* SettingsSchoolClassOrShortcutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E70731C554C0500D0E269 /* SettingsSchoolClassOrShortcutViewController.swift */; };
+		231E70761C55585800D0E269 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E70751C55585800D0E269 /* SettingsManager.swift */; };
+		231F0E1D1C651E8A000A6C4A /* FranziskaneumError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231F0E1C1C651E8A000A6C4A /* FranziskaneumError.swift */; };
+		231F89E91C54DD29005BAEA8 /* NewsImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231F89E81C54DD29005BAEA8 /* NewsImageTableViewCell.swift */; };
+		232017351C402DCC00E5A68F /* VPlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232017341C402DCC00E5A68F /* VPlanTableViewCell.swift */; };
+		232025571C5A9EFC000E8E67 /* VPlanNotificationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232025561C5A9EFC000E8E67 /* VPlanNotificationTask.swift */; };
+		23203E891C39AA8800BD73FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23203E881C39AA8800BD73FD /* AppDelegate.swift */; };
+		23203E901C39AA8800BD73FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23203E8E1C39AA8800BD73FD /* Main.storyboard */; };
+		23203E921C39AA8800BD73FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23203E911C39AA8800BD73FD /* Assets.xcassets */; };
+		23203E951C39AA8800BD73FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23203E931C39AA8800BD73FD /* LaunchScreen.storyboard */; };
+		232042BD1C52A48300CC6118 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232042BC1C52A48300CC6118 /* NewsTableViewController.swift */; };
+		232042BF1C52A55B00CC6118 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232042BE1C52A55B00CC6118 /* NewsTableViewCell.swift */; };
+		232042C11C52ADA900CC6118 /* NewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232042C01C52ADA900CC6118 /* NewsManager.swift */; };
+		232042C31C52AE0A00CC6118 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232042C21C52AE0A00CC6118 /* NewsData.swift */; };
+		2322CE731C4E920B0058C642 /* TeacherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2322CE721C4E920B0058C642 /* TeacherTableViewController.swift */; };
+		2322CE751C4E929B0058C642 /* TeacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2322CE741C4E929B0058C642 /* TeacherData.swift */; };
+		2322CE7A1C4E9CF20058C642 /* TeacherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2322CE791C4E9CF20058C642 /* TeacherTableViewCell.swift */; };
+		232334F71C4EADA500B8D598 /* TeacherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232334F61C4EADA500B8D598 /* TeacherManager.swift */; };
+		232334F91C4EB5BF00B8D598 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232334F81C4EB5BF00B8D598 /* Utils.swift */; };
+		2325D4771C53D1B400DA4B96 /* NewsArticleImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325D4761C53D1B400DA4B96 /* NewsArticleImagesCollectionViewCell.swift */; };
+		23260A941CA8065B00309C8F /* VPlanNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23260A931CA8065B00309C8F /* VPlanNotificationManager.swift */; };
+		23264CBB1D9EBBFE00A16F22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23264CBA1D9EBBFE00A16F22 /* GoogleService-Info.plist */; };
+		2326BBF31C5CCD210011F490 /* NewsArticlePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326BBF21C5CCD210011F490 /* NewsArticlePhoto.swift */; };
+		2339547A1C49464600BF2731 /* TimetableSingleHourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233954791C49464600BF2731 /* TimetableSingleHourTableViewCell.swift */; };
+		2339547C1C494AC700BF2731 /* TimetableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2339547B1C494AC700BF2731 /* TimetableData.swift */; };
+		233EB8651C3AD1D400308E1E /* VPlanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233EB8641C3AD1D400308E1E /* VPlanTableViewController.swift */; };
+		233EB8671C3AD91D00308E1E /* VPlanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233EB8661C3AD91D00308E1E /* VPlanManager.swift */; };
+		233EB8691C3ADDCD00308E1E /* VPlanDayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233EB8681C3ADDCD00308E1E /* VPlanDayData.swift */; };
+		233EB8861C3B069700308E1E /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 233EB8851C3B069700308E1E /* libxml2.2.tbd */; };
+		23448A0C1EC875130050D0F0 /* VPlanDayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233EB8681C3ADDCD00308E1E /* VPlanDayData.swift */; };
+		23448A0D1EC875130050D0F0 /* VPlanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233EB8661C3AD91D00308E1E /* VPlanManager.swift */; };
+		23448A0E1EC875130050D0F0 /* VPlanNotificationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232025561C5A9EFC000E8E67 /* VPlanNotificationTask.swift */; };
+		23448A0F1EC875130050D0F0 /* VPlanNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23260A931CA8065B00309C8F /* VPlanNotificationManager.swift */; };
+		2352CBC91C497B1C00B1426E /* TimetableSubjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2352CBC81C497B1C00B1426E /* TimetableSubjectDetailViewController.swift */; };
+		2361AB4D1C404A8500E70AAF /* VPlanDayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361AB4C1C404A8500E70AAF /* VPlanDayTableViewController.swift */; };
+		236DEABA1C484607004F0342 /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236DEAB91C484607004F0342 /* TimetableViewController.swift */; };
+		23849D2A1C55752500B60FC9 /* SettingsHomeCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23849D291C55752500B60FC9 /* SettingsHomeCategoryTableViewController.swift */; };
+		23849D2C1C55812D00B60FC9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23849D2B1C55812D00B60FC9 /* BaseViewController.swift */; };
+		23BF1B651DD878DC00CD0B6C /* ReachabilitySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1B641DD878DC00CD0B6C /* ReachabilitySwift.swift */; };
+		23CBD7B51CFC3E320072BB65 /* VPlanDayHeaderLeftRightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBD7B41CFC3E320072BB65 /* VPlanDayHeaderLeftRightTableViewCell.swift */; };
+		23CBD7B71CFC3EC70072BB65 /* VPlanDayHeaderTopBottomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBD7B61CFC3EC70072BB65 /* VPlanDayHeaderTopBottomTableViewCell.swift */; };
+		23CBD7B91CFCB0250072BB65 /* NewsArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBD7B81CFCB0250072BB65 /* NewsArticleViewController.swift */; };
+		23CF1D8B1EC87ED2006FAF10 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CF1D8A1EC87ED2006FAF10 /* StringUtils.swift */; };
+		23CF1D8C1EC87ED2006FAF10 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CF1D8A1EC87ED2006FAF10 /* StringUtils.swift */; };
+		23CF1D8D1EC87F37006FAF10 /* TeacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2322CE741C4E929B0058C642 /* TeacherData.swift */; };
+		23CF1D8E1EC87F58006FAF10 /* TimetableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2339547B1C494AC700BF2731 /* TimetableData.swift */; };
+		23CF1D8F1EC87F70006FAF10 /* TimetableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC80FC1C4A9B9F00DC8D1A /* TimetableManager.swift */; };
+		23CF1D901EC87FE3006FAF10 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 233EB8851C3B069700308E1E /* libxml2.2.tbd */; };
+		23CF1D911EC88039006FAF10 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D78D1F1D9EC99E00043A27 /* TFHpple.m */; };
+		23CF1D921EC8803C006FAF10 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D78D211D9EC99E00043A27 /* TFHppleElement.m */; };
+		23CF1D931EC8803F006FAF10 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D78D231D9EC99E00043A27 /* XPathQuery.m */; };
+		23CF1D971EC88FA8006FAF10 /* TodayVPlanHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CF1D961EC88FA8006FAF10 /* TodayVPlanHeaderTableViewCell.swift */; };
+		23CF1D991EC89074006FAF10 /* TodayVPlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CF1D981EC89074006FAF10 /* TodayVPlanTableViewCell.swift */; };
+		23D29E651ECE3526000F4118 /* UnarchiverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D29E641ECE3526000F4118 /* UnarchiverDelegate.swift */; };
+		23D29E661ECE3526000F4118 /* UnarchiverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D29E641ECE3526000F4118 /* UnarchiverDelegate.swift */; };
+		23D32DE71D048BB700154EF3 /* TeacherDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D32DE61D048BB700154EF3 /* TeacherDetailTableViewController.swift */; };
+		23D32DE91D048D6F00154EF3 /* TeacherDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D32DE81D048D6F00154EF3 /* TeacherDetailTableViewCell.swift */; };
+		23D78D241D9EC99E00043A27 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D78D1F1D9EC99E00043A27 /* TFHpple.m */; };
+		23D78D251D9EC99E00043A27 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D78D211D9EC99E00043A27 /* TFHppleElement.m */; };
+		23D78D261D9EC99E00043A27 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D78D231D9EC99E00043A27 /* XPathQuery.m */; };
+		23DB90731EC73D46002B7E6F /* TodayVPlanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E6F9F61EC7275E00E875E6 /* TodayVPlanTableViewController.swift */; };
+		23DB90761EC73EA0002B7E6F /* FranziskaneumError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231F0E1C1C651E8A000A6C4A /* FranziskaneumError.swift */; };
+		23DB90771EC73EBB002B7E6F /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E70751C55585800D0E269 /* SettingsManager.swift */; };
+		23DB907A1EC7400C002B7E6F /* ReachabilitySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1B641DD878DC00CD0B6C /* ReachabilitySwift.swift */; };
+		23E6F9F41EC7275E00E875E6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E6F9F31EC7275E00E875E6 /* NotificationCenter.framework */; };
+		23E6F9FA1EC7275E00E875E6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E6F9F81EC7275E00E875E6 /* MainInterface.storyboard */; };
+		23E6F9FE1EC7275E00E875E6 /* FranziskaneumVPlanWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 23E6F9F21EC7275E00E875E6 /* FranziskaneumVPlanWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		23EC80FB1C4A715B00DC8D1A /* TimetableDoubleHourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC80FA1C4A715B00DC8D1A /* TimetableDoubleHourTableViewCell.swift */; };
+		23EC80FD1C4A9B9F00DC8D1A /* TimetableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC80FC1C4A9B9F00DC8D1A /* TimetableManager.swift */; };
+		2F1497C643FA7C00E22070F5 /* Pods_FranziskaneumVPlanWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED87940A82EB3A6B9EBF1770 /* Pods_FranziskaneumVPlanWidget.framework */; };
+		F22210158112D73765824C04 /* Pods_Franziskaneum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05C16D9D9BD9439B338820E /* Pods_Franziskaneum.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23E6F9FC1EC7275E00E875E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23203E7D1C39AA8800BD73FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23E6F9F11EC7275E00E875E6;
+			remoteInfo = FranziskaneumVPlanWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23CB03481DDC902B005DC682 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				23E6F9FE1EC7275E00E875E6 /* FranziskaneumVPlanWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		23185BAC1CA8447C00046BD7 /* VPlanDayControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPlanDayControlViewController.swift; sourceTree = "<group>"; };
+		23185BAE1CA8477F00046BD7 /* EmptySegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptySegue.swift; sourceTree = "<group>"; };
+		231C3AFA1C5D76F000012158 /* SchoolClassOrTeacherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolClassOrTeacherViewController.swift; sourceTree = "<group>"; };
+		231D59821C68DF0700A15FC8 /* VPlanDayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPlanDayTableViewCell.swift; sourceTree = "<group>"; };
+		231D59841C6906EE00A15FC8 /* LicensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesViewController.swift; sourceTree = "<group>"; };
+		231E706E1C55396600D0E269 /* NewsOlderPostsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsOlderPostsTableViewCell.swift; sourceTree = "<group>"; };
+		231E70711C55420700D0E269 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		231E70731C554C0500D0E269 /* SettingsSchoolClassOrShortcutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSchoolClassOrShortcutViewController.swift; sourceTree = "<group>"; };
+		231E70751C55585800D0E269 /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		231F0E1C1C651E8A000A6C4A /* FranziskaneumError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FranziskaneumError.swift; sourceTree = "<group>"; };
+		231F89E81C54DD29005BAEA8 /* NewsImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsImageTableViewCell.swift; sourceTree = "<group>"; };
+		232017341C402DCC00E5A68F /* VPlanTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPlanTableViewCell.swift; sourceTree = "<group>"; };
+		232025561C5A9EFC000E8E67 /* VPlanNotificationTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPlanNotificationTask.swift; sourceTree = "<group>"; };
+		23203E851C39AA8800BD73FD /* Franziskaneum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Franziskaneum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23203E881C39AA8800BD73FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23203E8F1C39AA8800BD73FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23203E911C39AA8800BD73FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23203E941C39AA8800BD73FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23203E961C39AA8800BD73FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		232042BC1C52A48300CC6118 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		232042BE1C52A55B00CC6118 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		232042C01C52ADA900CC6118 /* NewsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsManager.swift; sourceTree = "<group>"; };
+		232042C21C52AE0A00CC6118 /* NewsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
+		2322CE721C4E920B0058C642 /* TeacherTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherTableViewController.swift; sourceTree = "<group>"; };
+		2322CE741C4E929B0058C642 /* TeacherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherData.swift; sourceTree = "<group>"; };
+		2322CE791C4E9CF20058C642 /* TeacherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherTableViewCell.swift; sourceTree = "<group>"; };
+		232334F61C4EADA500B8D598 /* TeacherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherManager.swift; sourceTree = "<group>"; };
+		232334F81C4EB5BF00B8D598 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		2325D4761C53D1B400DA4B96 /* NewsArticleImagesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsArticleImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		23260A931CA8065B00309C8F /* VPlanNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPlanNotificationManager.swift; sourceTree = "<group>"; };
+		23264CBA1D9EBBFE00A16F22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2326BBF21C5CCD210011F490 /* NewsArticlePhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsArticlePhoto.swift; sourceTree = "<group>"; };
+		233954791C49464600BF2731 /* TimetableSingleHourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableSingleHourTableViewCell.swift; sourceTree = "<group>"; };
+		2339547B1C494AC700BF2731 /* TimetableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableData.swift; sourceTree = "<group>"; };
+		233EB8641C3AD1D400308E1E /* VPlanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPlanTableViewController.swift; sourceTree = "<group>"; };
+		233EB8661C3AD91D00308E1E /* VPlanManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPlanManager.swift; sourceTree = "<group>"; };
+		233EB8681C3ADDCD00308E1E /* VPlanDayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPlanDayData.swift; sourceTree = "<group>"; };
+		233EB8851C3B069700308E1E /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		233EB8891C3B085E00308E1E /* Franziskaneum-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Franziskaneum-Bridging-Header.h"; sourceTree = "<group>"; };
+		2352CBC81C497B1C00B1426E /* TimetableSubjectDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableSubjectDetailViewController.swift; sourceTree = "<group>"; };
+		235CE7AA1DA1C95C002CDAC9 /* Franziskaneum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Franziskaneum.entitlements; sourceTree = "<group>"; };
+		2361AB4C1C404A8500E70AAF /* VPlanDayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPlanDayTableViewController.swift; sourceTree = "<group>"; };
+		236DEAB91C484607004F0342 /* TimetableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
+		23849D291C55752500B60FC9 /* SettingsHomeCategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsHomeCategoryTableViewController.swift; sourceTree = "<group>"; };
+		23849D2B1C55812D00B60FC9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		23BF1B641DD878DC00CD0B6C /* ReachabilitySwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilitySwift.swift; sourceTree = "<group>"; };
+		23CBD7B41CFC3E320072BB65 /* VPlanDayHeaderLeftRightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPlanDayHeaderLeftRightTableViewCell.swift; sourceTree = "<group>"; };
+		23CBD7B61CFC3EC70072BB65 /* VPlanDayHeaderTopBottomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPlanDayHeaderTopBottomTableViewCell.swift; sourceTree = "<group>"; };
+		23CBD7B81CFCB0250072BB65 /* NewsArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsArticleViewController.swift; sourceTree = "<group>"; };
+		23CF1D8A1EC87ED2006FAF10 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		23CF1D961EC88FA8006FAF10 /* TodayVPlanHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayVPlanHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		23CF1D981EC89074006FAF10 /* TodayVPlanTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayVPlanTableViewCell.swift; sourceTree = "<group>"; };
+		23CF1D9A1EC8AEF4006FAF10 /* FranziskaneumVPlanWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FranziskaneumVPlanWidget.entitlements; sourceTree = "<group>"; };
+		23D29E641ECE3526000F4118 /* UnarchiverDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnarchiverDelegate.swift; sourceTree = "<group>"; };
+		23D32DE61D048BB700154EF3 /* TeacherDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDetailTableViewController.swift; sourceTree = "<group>"; };
+		23D32DE81D048D6F00154EF3 /* TeacherDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDetailTableViewCell.swift; sourceTree = "<group>"; };
+		23D78D1E1D9EC99E00043A27 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		23D78D1F1D9EC99E00043A27 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		23D78D201D9EC99E00043A27 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		23D78D211D9EC99E00043A27 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		23D78D221D9EC99E00043A27 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		23D78D231D9EC99E00043A27 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		23E6F9F21EC7275E00E875E6 /* FranziskaneumVPlanWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FranziskaneumVPlanWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		23E6F9F31EC7275E00E875E6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		23E6F9F61EC7275E00E875E6 /* TodayVPlanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayVPlanTableViewController.swift; sourceTree = "<group>"; };
+		23E6F9F91EC7275E00E875E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		23E6F9FB1EC7275E00E875E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23EC80FA1C4A715B00DC8D1A /* TimetableDoubleHourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableDoubleHourTableViewCell.swift; sourceTree = "<group>"; };
+		23EC80FC1C4A9B9F00DC8D1A /* TimetableManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableManager.swift; sourceTree = "<group>"; };
+		51327FAA64CE70F347A7D9F5 /* Pods-Franziskaneum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Franziskaneum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Franziskaneum/Pods-Franziskaneum.debug.xcconfig"; sourceTree = "<group>"; };
+		A05C16D9D9BD9439B338820E /* Pods_Franziskaneum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Franziskaneum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C860A16F3DFCF2091F223A4F /* Pods-FranziskaneumVPlanWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FranziskaneumVPlanWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-FranziskaneumVPlanWidget/Pods-FranziskaneumVPlanWidget.release.xcconfig"; sourceTree = "<group>"; };
+		CE88FDF43F32C4C39685EAB1 /* Pods-Franziskaneum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Franziskaneum.release.xcconfig"; path = "Pods/Target Support Files/Pods-Franziskaneum/Pods-Franziskaneum.release.xcconfig"; sourceTree = "<group>"; };
+		E6B852025CDD710C6F19D45A /* Pods-FranziskaneumVPlanWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FranziskaneumVPlanWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FranziskaneumVPlanWidget/Pods-FranziskaneumVPlanWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		ED87940A82EB3A6B9EBF1770 /* Pods_FranziskaneumVPlanWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FranziskaneumVPlanWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23203E821C39AA8800BD73FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				233EB8861C3B069700308E1E /* libxml2.2.tbd in Frameworks */,
+				F22210158112D73765824C04 /* Pods_Franziskaneum.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E6F9EF1EC7275E00E875E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23CF1D901EC87FE3006FAF10 /* libxml2.2.tbd in Frameworks */,
+				23E6F9F41EC7275E00E875E6 /* NotificationCenter.framework in Frameworks */,
+				2F1497C643FA7C00E22070F5 /* Pods_FranziskaneumVPlanWidget.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18CF079B16A8E54688A7F28B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51327FAA64CE70F347A7D9F5 /* Pods-Franziskaneum.debug.xcconfig */,
+				CE88FDF43F32C4C39685EAB1 /* Pods-Franziskaneum.release.xcconfig */,
+				E6B852025CDD710C6F19D45A /* Pods-FranziskaneumVPlanWidget.debug.xcconfig */,
+				C860A16F3DFCF2091F223A4F /* Pods-FranziskaneumVPlanWidget.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		231E70701C5541EE00D0E269 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				231E70711C55420700D0E269 /* SettingsTableViewController.swift */,
+				231E70731C554C0500D0E269 /* SettingsSchoolClassOrShortcutViewController.swift */,
+				23849D291C55752500B60FC9 /* SettingsHomeCategoryTableViewController.swift */,
+				231D59841C6906EE00A15FC8 /* LicensesViewController.swift */,
+				231E70751C55585800D0E269 /* SettingsManager.swift */,
+			);
+			name = settings;
+			sourceTree = "<group>";
+		};
+		23203E7C1C39AA8800BD73FD = {
+			isa = PBXGroup;
+			children = (
+				233EB8851C3B069700308E1E /* libxml2.2.tbd */,
+				23203E871C39AA8800BD73FD /* Franziskaneum */,
+				23E6F9F51EC7275E00E875E6 /* FranziskaneumVPlanWidget */,
+				23203E861C39AA8800BD73FD /* Products */,
+				18CF079B16A8E54688A7F28B /* Pods */,
+				53ABDDF8A381D5B2F6464961 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		23203E861C39AA8800BD73FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23203E851C39AA8800BD73FD /* Franziskaneum.app */,
+				23E6F9F21EC7275E00E875E6 /* FranziskaneumVPlanWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23203E871C39AA8800BD73FD /* Franziskaneum */ = {
+			isa = PBXGroup;
+			children = (
+				235CE7AA1DA1C95C002CDAC9 /* Franziskaneum.entitlements */,
+				232042BB1C52A45800CC6118 /* news */,
+				23C0601C1C4455C000E50CE9 /* vplan */,
+				236DEAB41C484518004F0342 /* timetable */,
+				2322CE711C4E8FAF0058C642 /* teacher */,
+				231E70701C5541EE00D0E269 /* settings */,
+				23CF1D891EC87E99006FAF10 /* extensions */,
+				23D78D1D1D9EC97100043A27 /* hpple */,
+				23BF1B661DD8791000CD0B6C /* ReachabilitySwift */,
+				23203E911C39AA8800BD73FD /* Assets.xcassets */,
+				23203E961C39AA8800BD73FD /* Info.plist */,
+				23264CBA1D9EBBFE00A16F22 /* GoogleService-Info.plist */,
+				23203E8E1C39AA8800BD73FD /* Main.storyboard */,
+				23203E931C39AA8800BD73FD /* LaunchScreen.storyboard */,
+				23203E881C39AA8800BD73FD /* AppDelegate.swift */,
+				23849D2B1C55812D00B60FC9 /* BaseViewController.swift */,
+				231C3AFA1C5D76F000012158 /* SchoolClassOrTeacherViewController.swift */,
+				231F0E1C1C651E8A000A6C4A /* FranziskaneumError.swift */,
+				23185BAE1CA8477F00046BD7 /* EmptySegue.swift */,
+				233EB8891C3B085E00308E1E /* Franziskaneum-Bridging-Header.h */,
+				23D29E641ECE3526000F4118 /* UnarchiverDelegate.swift */,
+			);
+			path = Franziskaneum;
+			sourceTree = "<group>";
+		};
+		232042BB1C52A45800CC6118 /* news */ = {
+			isa = PBXGroup;
+			children = (
+				232042BC1C52A48300CC6118 /* NewsTableViewController.swift */,
+				232042BE1C52A55B00CC6118 /* NewsTableViewCell.swift */,
+				231F89E81C54DD29005BAEA8 /* NewsImageTableViewCell.swift */,
+				23CBD7B81CFCB0250072BB65 /* NewsArticleViewController.swift */,
+				231E706E1C55396600D0E269 /* NewsOlderPostsTableViewCell.swift */,
+				2325D4761C53D1B400DA4B96 /* NewsArticleImagesCollectionViewCell.swift */,
+				232042C21C52AE0A00CC6118 /* NewsData.swift */,
+				2326BBF21C5CCD210011F490 /* NewsArticlePhoto.swift */,
+				232042C01C52ADA900CC6118 /* NewsManager.swift */,
+			);
+			name = news;
+			sourceTree = "<group>";
+		};
+		2322CE711C4E8FAF0058C642 /* teacher */ = {
+			isa = PBXGroup;
+			children = (
+				2322CE721C4E920B0058C642 /* TeacherTableViewController.swift */,
+				2322CE791C4E9CF20058C642 /* TeacherTableViewCell.swift */,
+				23D32DE61D048BB700154EF3 /* TeacherDetailTableViewController.swift */,
+				23D32DE81D048D6F00154EF3 /* TeacherDetailTableViewCell.swift */,
+				2322CE741C4E929B0058C642 /* TeacherData.swift */,
+				232334F61C4EADA500B8D598 /* TeacherManager.swift */,
+			);
+			name = teacher;
+			sourceTree = "<group>";
+		};
+		236DEAB41C484518004F0342 /* timetable */ = {
+			isa = PBXGroup;
+			children = (
+				236DEAB91C484607004F0342 /* TimetableViewController.swift */,
+				233954791C49464600BF2731 /* TimetableSingleHourTableViewCell.swift */,
+				23EC80FA1C4A715B00DC8D1A /* TimetableDoubleHourTableViewCell.swift */,
+				2352CBC81C497B1C00B1426E /* TimetableSubjectDetailViewController.swift */,
+				2339547B1C494AC700BF2731 /* TimetableData.swift */,
+				23EC80FC1C4A9B9F00DC8D1A /* TimetableManager.swift */,
+			);
+			name = timetable;
+			sourceTree = "<group>";
+		};
+		23BF1B661DD8791000CD0B6C /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				23BF1B641DD878DC00CD0B6C /* ReachabilitySwift.swift */,
+			);
+			name = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		23C0601C1C4455C000E50CE9 /* vplan */ = {
+			isa = PBXGroup;
+			children = (
+				233EB8641C3AD1D400308E1E /* VPlanTableViewController.swift */,
+				232017341C402DCC00E5A68F /* VPlanTableViewCell.swift */,
+				23185BAC1CA8447C00046BD7 /* VPlanDayControlViewController.swift */,
+				2361AB4C1C404A8500E70AAF /* VPlanDayTableViewController.swift */,
+				23CBD7B41CFC3E320072BB65 /* VPlanDayHeaderLeftRightTableViewCell.swift */,
+				23CBD7B61CFC3EC70072BB65 /* VPlanDayHeaderTopBottomTableViewCell.swift */,
+				231D59821C68DF0700A15FC8 /* VPlanDayTableViewCell.swift */,
+				233EB8681C3ADDCD00308E1E /* VPlanDayData.swift */,
+				233EB8661C3AD91D00308E1E /* VPlanManager.swift */,
+				232025561C5A9EFC000E8E67 /* VPlanNotificationTask.swift */,
+				23260A931CA8065B00309C8F /* VPlanNotificationManager.swift */,
+			);
+			name = vplan;
+			sourceTree = "<group>";
+		};
+		23CF1D891EC87E99006FAF10 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				232334F81C4EB5BF00B8D598 /* Utils.swift */,
+				23CF1D8A1EC87ED2006FAF10 /* StringUtils.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
+		23D78D1D1D9EC97100043A27 /* hpple */ = {
+			isa = PBXGroup;
+			children = (
+				23D78D1E1D9EC99E00043A27 /* TFHpple.h */,
+				23D78D1F1D9EC99E00043A27 /* TFHpple.m */,
+				23D78D201D9EC99E00043A27 /* TFHppleElement.h */,
+				23D78D211D9EC99E00043A27 /* TFHppleElement.m */,
+				23D78D221D9EC99E00043A27 /* XPathQuery.h */,
+				23D78D231D9EC99E00043A27 /* XPathQuery.m */,
+			);
+			name = hpple;
+			sourceTree = "<group>";
+		};
+		23E6F9F51EC7275E00E875E6 /* FranziskaneumVPlanWidget */ = {
+			isa = PBXGroup;
+			children = (
+				23CF1D9A1EC8AEF4006FAF10 /* FranziskaneumVPlanWidget.entitlements */,
+				23E6F9F61EC7275E00E875E6 /* TodayVPlanTableViewController.swift */,
+				23CF1D961EC88FA8006FAF10 /* TodayVPlanHeaderTableViewCell.swift */,
+				23CF1D981EC89074006FAF10 /* TodayVPlanTableViewCell.swift */,
+				23E6F9F81EC7275E00E875E6 /* MainInterface.storyboard */,
+				23E6F9FB1EC7275E00E875E6 /* Info.plist */,
+			);
+			path = FranziskaneumVPlanWidget;
+			sourceTree = "<group>";
+		};
+		53ABDDF8A381D5B2F6464961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A05C16D9D9BD9439B338820E /* Pods_Franziskaneum.framework */,
+				23E6F9F31EC7275E00E875E6 /* NotificationCenter.framework */,
+				ED87940A82EB3A6B9EBF1770 /* Pods_FranziskaneumVPlanWidget.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23203E841C39AA8800BD73FD /* Franziskaneum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23203E991C39AA8800BD73FD /* Build configuration list for PBXNativeTarget "Franziskaneum" */;
+			buildPhases = (
+				825820714B28D016F204E7F6 /* 📦 Check Pods Manifest.lock */,
+				23203E811C39AA8800BD73FD /* Sources */,
+				23203E821C39AA8800BD73FD /* Frameworks */,
+				23203E831C39AA8800BD73FD /* Resources */,
+				D6D6CEF1C131FE6A2555D65B /* 📦 Embed Pods Frameworks */,
+				E4C00544D64D40D9C3A98200 /* 📦 Copy Pods Resources */,
+				23CB03481DDC902B005DC682 /* Embed App Extensions */,
+				23CB034A1DE0DF1A005DC682 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23E6F9FD1EC7275E00E875E6 /* PBXTargetDependency */,
+			);
+			name = Franziskaneum;
+			productName = Franziskaneum;
+			productReference = 23203E851C39AA8800BD73FD /* Franziskaneum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23E6F9F11EC7275E00E875E6 /* FranziskaneumVPlanWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23E6FA011EC7275E00E875E6 /* Build configuration list for PBXNativeTarget "FranziskaneumVPlanWidget" */;
+			buildPhases = (
+				866ED0DDC03209ED84808B7B /* 📦 Check Pods Manifest.lock */,
+				23E6F9EE1EC7275E00E875E6 /* Sources */,
+				23E6F9EF1EC7275E00E875E6 /* Frameworks */,
+				23E6F9F01EC7275E00E875E6 /* Resources */,
+				CCF5E01A8E1EA5B08568FF4E /* 📦 Embed Pods Frameworks */,
+				509C147AD8BF725494EF2058 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FranziskaneumVPlanWidget;
+			productName = FranziskaneumVPlanWidget;
+			productReference = 23E6F9F21EC7275E00E875E6 /* FranziskaneumVPlanWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23203E7D1C39AA8800BD73FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Franziskaneum;
+				TargetAttributes = {
+					23203E841C39AA8800BD73FD = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 93YRM5MV8V;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					23E6F9F11EC7275E00E875E6 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 93YRM5MV8V;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 23203E801C39AA8800BD73FD /* Build configuration list for PBXProject "Franziskaneum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23203E7C1C39AA8800BD73FD;
+			productRefGroup = 23203E861C39AA8800BD73FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23203E841C39AA8800BD73FD /* Franziskaneum */,
+				23E6F9F11EC7275E00E875E6 /* FranziskaneumVPlanWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23203E831C39AA8800BD73FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23203E951C39AA8800BD73FD /* LaunchScreen.storyboard in Resources */,
+				23264CBB1D9EBBFE00A16F22 /* GoogleService-Info.plist in Resources */,
+				23203E921C39AA8800BD73FD /* Assets.xcassets in Resources */,
+				23203E901C39AA8800BD73FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E6F9F01EC7275E00E875E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E6F9FA1EC7275E00E875E6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23CB034A1DE0DF1A005DC682 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:334472337524:ios:54ad23fba645dcf2\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"/Users/niko/Desktop/Xcode_Projects/Franziskaneum/FranziskaneumServiceAccount.json\"";
+		};
+		509C147AD8BF725494EF2058 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FranziskaneumVPlanWidget/Pods-FranziskaneumVPlanWidget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		825820714B28D016F204E7F6 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		866ED0DDC03209ED84808B7B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCF5E01A8E1EA5B08568FF4E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FranziskaneumVPlanWidget/Pods-FranziskaneumVPlanWidget-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6D6CEF1C131FE6A2555D65B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Franziskaneum/Pods-Franziskaneum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4C00544D64D40D9C3A98200 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Franziskaneum/Pods-Franziskaneum-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23203E811C39AA8800BD73FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231D59851C6906EE00A15FC8 /* LicensesViewController.swift in Sources */,
+				2325D4771C53D1B400DA4B96 /* NewsArticleImagesCollectionViewCell.swift in Sources */,
+				231F0E1D1C651E8A000A6C4A /* FranziskaneumError.swift in Sources */,
+				23203E891C39AA8800BD73FD /* AppDelegate.swift in Sources */,
+				232025571C5A9EFC000E8E67 /* VPlanNotificationTask.swift in Sources */,
+				23849D2C1C55812D00B60FC9 /* BaseViewController.swift in Sources */,
+				232042C11C52ADA900CC6118 /* NewsManager.swift in Sources */,
+				23D78D251D9EC99E00043A27 /* TFHppleElement.m in Sources */,
+				23EC80FB1C4A715B00DC8D1A /* TimetableDoubleHourTableViewCell.swift in Sources */,
+				23185BAD1CA8447C00046BD7 /* VPlanDayControlViewController.swift in Sources */,
+				232334F71C4EADA500B8D598 /* TeacherManager.swift in Sources */,
+				23BF1B651DD878DC00CD0B6C /* ReachabilitySwift.swift in Sources */,
+				2339547A1C49464600BF2731 /* TimetableSingleHourTableViewCell.swift in Sources */,
+				232334F91C4EB5BF00B8D598 /* Utils.swift in Sources */,
+				23CBD7B51CFC3E320072BB65 /* VPlanDayHeaderLeftRightTableViewCell.swift in Sources */,
+				2322CE731C4E920B0058C642 /* TeacherTableViewController.swift in Sources */,
+				23260A941CA8065B00309C8F /* VPlanNotificationManager.swift in Sources */,
+				233EB8651C3AD1D400308E1E /* VPlanTableViewController.swift in Sources */,
+				23EC80FD1C4A9B9F00DC8D1A /* TimetableManager.swift in Sources */,
+				23D32DE91D048D6F00154EF3 /* TeacherDetailTableViewCell.swift in Sources */,
+				23185BAF1CA8477F00046BD7 /* EmptySegue.swift in Sources */,
+				233EB8671C3AD91D00308E1E /* VPlanManager.swift in Sources */,
+				23CBD7B71CFC3EC70072BB65 /* VPlanDayHeaderTopBottomTableViewCell.swift in Sources */,
+				2339547C1C494AC700BF2731 /* TimetableData.swift in Sources */,
+				232042C31C52AE0A00CC6118 /* NewsData.swift in Sources */,
+				2352CBC91C497B1C00B1426E /* TimetableSubjectDetailViewController.swift in Sources */,
+				231C3AFB1C5D76F000012158 /* SchoolClassOrTeacherViewController.swift in Sources */,
+				231E70741C554C0500D0E269 /* SettingsSchoolClassOrShortcutViewController.swift in Sources */,
+				2322CE751C4E929B0058C642 /* TeacherData.swift in Sources */,
+				233EB8691C3ADDCD00308E1E /* VPlanDayData.swift in Sources */,
+				23D29E651ECE3526000F4118 /* UnarchiverDelegate.swift in Sources */,
+				2322CE7A1C4E9CF20058C642 /* TeacherTableViewCell.swift in Sources */,
+				232042BD1C52A48300CC6118 /* NewsTableViewController.swift in Sources */,
+				231E70761C55585800D0E269 /* SettingsManager.swift in Sources */,
+				2361AB4D1C404A8500E70AAF /* VPlanDayTableViewController.swift in Sources */,
+				231F89E91C54DD29005BAEA8 /* NewsImageTableViewCell.swift in Sources */,
+				23D32DE71D048BB700154EF3 /* TeacherDetailTableViewController.swift in Sources */,
+				23CF1D8B1EC87ED2006FAF10 /* StringUtils.swift in Sources */,
+				23CBD7B91CFCB0250072BB65 /* NewsArticleViewController.swift in Sources */,
+				232042BF1C52A55B00CC6118 /* NewsTableViewCell.swift in Sources */,
+				231D59831C68DF0700A15FC8 /* VPlanDayTableViewCell.swift in Sources */,
+				231E70721C55420700D0E269 /* SettingsTableViewController.swift in Sources */,
+				232017351C402DCC00E5A68F /* VPlanTableViewCell.swift in Sources */,
+				23D78D261D9EC99E00043A27 /* XPathQuery.m in Sources */,
+				23D78D241D9EC99E00043A27 /* TFHpple.m in Sources */,
+				2326BBF31C5CCD210011F490 /* NewsArticlePhoto.swift in Sources */,
+				236DEABA1C484607004F0342 /* TimetableViewController.swift in Sources */,
+				23849D2A1C55752500B60FC9 /* SettingsHomeCategoryTableViewController.swift in Sources */,
+				231E706F1C55396600D0E269 /* NewsOlderPostsTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E6F9EE1EC7275E00E875E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DB907A1EC7400C002B7E6F /* ReachabilitySwift.swift in Sources */,
+				23448A0C1EC875130050D0F0 /* VPlanDayData.swift in Sources */,
+				23CF1D8D1EC87F37006FAF10 /* TeacherData.swift in Sources */,
+				23DB90771EC73EBB002B7E6F /* SettingsManager.swift in Sources */,
+				23CF1D991EC89074006FAF10 /* TodayVPlanTableViewCell.swift in Sources */,
+				23DB90731EC73D46002B7E6F /* TodayVPlanTableViewController.swift in Sources */,
+				23448A0F1EC875130050D0F0 /* VPlanNotificationManager.swift in Sources */,
+				23CF1D8C1EC87ED2006FAF10 /* StringUtils.swift in Sources */,
+				23CF1D931EC8803F006FAF10 /* XPathQuery.m in Sources */,
+				23CF1D8F1EC87F70006FAF10 /* TimetableManager.swift in Sources */,
+				23CF1D921EC8803C006FAF10 /* TFHppleElement.m in Sources */,
+				23D29E661ECE3526000F4118 /* UnarchiverDelegate.swift in Sources */,
+				23DB90761EC73EA0002B7E6F /* FranziskaneumError.swift in Sources */,
+				23448A0E1EC875130050D0F0 /* VPlanNotificationTask.swift in Sources */,
+				23CF1D971EC88FA8006FAF10 /* TodayVPlanHeaderTableViewCell.swift in Sources */,
+				23448A0D1EC875130050D0F0 /* VPlanManager.swift in Sources */,
+				23CF1D8E1EC87F58006FAF10 /* TimetableData.swift in Sources */,
+				23CF1D911EC88039006FAF10 /* TFHpple.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23E6F9FD1EC7275E00E875E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23E6F9F11EC7275E00E875E6 /* FranziskaneumVPlanWidget */;
+			targetProxy = 23E6F9FC1EC7275E00E875E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23203E8E1C39AA8800BD73FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23203E8F1C39AA8800BD73FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23203E931C39AA8800BD73FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23203E941C39AA8800BD73FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		23E6F9F81EC7275E00E875E6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23E6F9F91EC7275E00E875E6 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23203E971C39AA8800BD73FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 93YRM5MV8V;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23203E981C39AA8800BD73FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 93YRM5MV8V;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23203E9A1C39AA8800BD73FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51327FAA64CE70F347A7D9F5 /* Pods-Franziskaneum.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Franziskaneum/Franziskaneum.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Franziskaneum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.franziskaneum.Franziskaneum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Franziskaneum/Franziskaneum-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23203E9B1C39AA8800BD73FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE88FDF43F32C4C39685EAB1 /* Pods-Franziskaneum.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Franziskaneum/Franziskaneum.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Franziskaneum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.franziskaneum.Franziskaneum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Franziskaneum/Franziskaneum-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23E6F9FF1EC7275E00E875E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B852025CDD710C6F19D45A /* Pods-FranziskaneumVPlanWidget.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = FranziskaneumVPlanWidget/FranziskaneumVPlanWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gymnasium Franziskaneum (93YRM5MV8V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 93YRM5MV8V;
+				INFOPLIST_FILE = FranziskaneumVPlanWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.franziskaneum.Franziskaneum.FranziskaneumVPlanWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Franziskaneum/Franziskaneum-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		23E6FA001EC7275E00E875E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C860A16F3DFCF2091F223A4F /* Pods-FranziskaneumVPlanWidget.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = FranziskaneumVPlanWidget/FranziskaneumVPlanWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gymnasium Franziskaneum (93YRM5MV8V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 93YRM5MV8V;
+				INFOPLIST_FILE = FranziskaneumVPlanWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.franziskaneum.Franziskaneum.FranziskaneumVPlanWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Franziskaneum/Franziskaneum-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23203E801C39AA8800BD73FD /* Build configuration list for PBXProject "Franziskaneum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23203E971C39AA8800BD73FD /* Debug */,
+				23203E981C39AA8800BD73FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23203E991C39AA8800BD73FD /* Build configuration list for PBXNativeTarget "Franziskaneum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23203E9A1C39AA8800BD73FD /* Debug */,
+				23203E9B1C39AA8800BD73FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23E6FA011EC7275E00E875E6 /* Build configuration list for PBXNativeTarget "FranziskaneumVPlanWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23E6F9FF1EC7275E00E875E6 /* Debug */,
+				23E6FA001EC7275E00E875E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23203E7D1C39AA8800BD73FD /* Project object */;
+}

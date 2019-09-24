@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="w8W-xD-nBw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vertretungsplan-->
+        <scene sceneID="3JH-8O-w67">
+            <objects>
+                <viewController id="ney-uj-11K" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8KX-0g-eh3"/>
+                        <viewControllerLayoutGuide type="bottom" id="hdy-tU-83C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RGp-jp-0L8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="Vertretungsplan" image="vplan" selectedImage="selectedVPlan" id="03g-dl-km8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75Z-ve-xBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-705"/>
+        </scene>
+        <!--Lehrerliste-->
+        <scene sceneID="mBs-Om-wzE">
+            <objects>
+                <viewController id="hER-sY-bqA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MsD-Hl-5nK"/>
+                        <viewControllerLayoutGuide type="bottom" id="1IB-r5-0Ap"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HIx-m9-8vu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="Lehrerliste" image="teacherlist" selectedImage="selectedTeacherlist" id="V3I-g8-7Hu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OX7-aE-aNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="717"/>
+        </scene>
+        <!--Einstellungen-->
+        <scene sceneID="0Qn-r1-kVp">
+            <objects>
+                <viewController id="ctE-oL-4AN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7TU-Cf-THU"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Jg-98-LIt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="In7-wY-ZVr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="Einstellungen" image="settings" selectedImage="selectedSettings" id="FSS-Ch-jMw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFR-yj-LfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="1429"/>
+        </scene>
+        <!--Stundenplan-->
+        <scene sceneID="MXb-TC-tNm">
+            <objects>
+                <viewController id="MOx-2V-K8S" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Lv-Bz-NAn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vw5-nL-K98"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Rm-bP-Owh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="Stundenplan" image="timetable" selectedImage="selectedTimetable" id="lyP-lM-RSD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pPG-Py-ESU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="15"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9FD-Kg-g9m">
+            <objects>
+                <viewController id="jTp-i5-RT5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jtY-68-arO"/>
+                        <viewControllerLayoutGuide type="bottom" id="RdE-7z-eEi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yhM-pz-1KI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="t5u-vf-5Pc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3N9-D9-u25" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="-1396"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="a6d-2S-cTg">
+            <objects>
+                <tabBarController id="w8W-xD-nBw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="qXx-ma-x6J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.63529411759999999" green="0.054901960780000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.63529411759999999" green="0.054901960780000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="koc-0s-dWs" kind="relationship" relationship="viewControllers" id="1bN-gS-oED"/>
+                        <segue destination="ney-uj-11K" kind="relationship" relationship="viewControllers" id="cyx-VA-wen"/>
+                        <segue destination="MOx-2V-K8S" kind="relationship" relationship="viewControllers" id="XNh-5b-9ZH"/>
+                        <segue destination="hER-sY-bqA" kind="relationship" relationship="viewControllers" id="EbC-gB-gMt"/>
+                        <segue destination="ctE-oL-4AN" kind="relationship" relationship="viewControllers" id="nD7-A6-2u6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cad-sH-QrX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-858" y="15"/>
+        </scene>
+        <!--Aktuellles-->
+        <scene sceneID="2sg-vQ-dWC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="koc-0s-dWs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" enabled="NO" title="Aktuellles" image="news" selectedImage="selectedNews" id="IlF-s1-7jf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sCa-Qg-yTo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jTp-i5-RT5" kind="relationship" relationship="rootViewController" id="6Ba-sH-RZn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2WT-7d-6e5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-1396"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="news" width="25" height="25"/>
+        <image name="selectedNews" width="25" height="25"/>
+        <image name="selectedSettings" width="25" height="25"/>
+        <image name="selectedTeacherlist" width="25" height="25"/>
+        <image name="selectedTimetable" width="25" height="25"/>
+        <image name="selectedVPlan" width="25" height="25"/>
+        <image name="settings" width="25" height="25"/>
+        <image name="teacherlist" width="25" height="25"/>
+        <image name="timetable" width="25" height="25"/>
+        <image name="vplan" width="25" height="25"/>
+    </resources>
+    <color key="tintColor" red="0.63529411759999999" green="0.054901960780000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
